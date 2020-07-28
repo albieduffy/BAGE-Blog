@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-rows:  50px 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+main, header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+}
+
+.tag-section, article, aside {
+  border-style: solid;
+  border-width: thin;
+}
+
+article {
+  height: calc(100vh-50px);
+  overflow: auto;
+}
+
+input[type="radio"] {
+  display: block;
+  margin-top: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 50px;
+}
+.sticky-section, .tag-section {
+  background-color: #ffbdc7;
+}
+
+.blog-section section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-style: solid;
+  border-width: thick;
+}
+.title-box, .main-box, .tag-and-submit {
+  margin: 10px;
+}
+.comment-area {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+
+}
+.add-comment {
+  border-style: solid;
+  border-width: thick;
+  margin-top: 5%;
+}
+.post-made {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-style: solid;
+  border-width: thick;
+  background-color: #ffdee3;
+}
+.post-made * {
+  margin: 2%;
+}
+.post-made p {
+  color: blue;
+  text-align: center;
+  margin-left: 5%;
+}
+.post-made h4 {
+  color: brown;
+}
